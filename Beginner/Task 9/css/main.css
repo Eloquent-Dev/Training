@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(35, 35, 35);
+    height: 100vh;
+}
+
+.headding {
+    text-align: center;
+    color: white;
+    margin: 2rem 0 2rem 0;
+}
+
+.headding h1,
+h3 {
+    margin-bottom: 1rem;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.inner img {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.inner img:hover{
+    transform:translateY(-20px);
+    border: 2px solid #007AFF;
+}
+
+
+#game-over h1 {
+    color: white;
+}
+
+#game-over button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #007AFF;
+    color: white;
+    cursor: pointer;
+    transition: all 0.8s ease;
+    margin: 4rem 0 4rem 0;
+}
+.door-opened{
+    transform: translate(100%,-100%);
+    opacity: 0;
+}
+
+#game-over {
+    align-items: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#you-win h1 {
+    color: white;
+}
+
+#you-win button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #007AFF;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 4rem 0 4rem 0;
+}
+
+#you-win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.loading-overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid transparent;
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

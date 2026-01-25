@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick a Door</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="outer">
+        <div class="headding">
+            <h1>Pick a Door</h1>
+            <h3 id="level">Level 1</h3>
+        </div>
+        <div class="inner" id="door-container"></div>
+    </div>
+    <div id="game-over">
+        <h1>Game Over!</h1>
+        <button onclick="Restart()">Restart</button>
+    </div>
+    <div id="you-win">
+        <h1>You Win!</h1>
+        <button onclick="Restart()">Restart</button>
+    </div>
+
+    <div class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
